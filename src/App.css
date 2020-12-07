@@ -1,0 +1,47 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App {
+  padding: 20px;
+}
+
+.navbar {
+  display: flex;
+  background: #4682b4;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo-navbar {
+  width: 20%;
+  height: 60%;
+  margin: 9px;
+}
+
+.navbar-logged {
+  display: flex;
+  margin: 10px;
+}
+
+.navbar-button {
+  margin: 10px;
+  padding: 10px;
+  height: 35px;
+  border-radius: 5%;
+}
+
+/* -------------------PAGINA HOME -------------------- */
+
+
+
