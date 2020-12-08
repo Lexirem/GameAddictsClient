@@ -1,42 +1,27 @@
-7Seas.
+Game Addicts!! 
 
 Description
 
-This is an App for people to find people and share good times at the sea. Users will find differents offers from sailors and their boats.
-If you own a boat and looking for sailors or viceversa, thats your App!!!
+This is an App for people who loves games and want to keep track of how many they have and what type.
 
 
 User Stories
 
 · 404: As an anon/user I can see a 404 page if I try to reach a page that does not exist so that I know it's my fault.
 
-· Signup: As an anon I can sign up in the platform so that I can start playing into competition.
+· Signup: As an anon I can sign up in the platform so that I can get into my profile.
 
-· Login: As a user I can login to the platform so that I can play competitions.
+· Login: As a user I can login to the platform so that I can .
 
 · Logout: As a user I can logout from the platform so no one else can use it.
 
-· Add offer: As a user I can add a sailing offer as a crew or a boat owner.
 
-· Edit offer: As a user I can edit a offer.
-
-· Edit profile: As a user I can edit my user and boat profile.
-
-· View offers: As an anon I can view the crew and boat offers list.
-
-· View details: As a user I can view offer details.
 
 
 
 Backlog
 
-· Add more searchs filters in /offers page.
 
-· Generate crew offers.
-
-· Add favourites option from offers.
-
-· Generate internal chat between users.
 
 
 
@@ -89,24 +74,13 @@ Components
     auth.logout()
     auth.me()
 
-· Offers Service:
-
-    offer.list()
-    offer.detail(id)
-    offer.add(id)
-    offer.delete(id)
-
 · User:
 
     user.detail(id)
     user.add(id)
     user.delete(id)
 
-· Boat:
 
-    boat.detail(id)
-    boat.add(id)
-    boat.delete(id)
 
 
 Server/Backend
@@ -145,23 +119,7 @@ lenght: Number
 image: String
 }
 
-MODEL OFFER :
 
-{
-crewNumber: Number,
-boardingLocation: String,
-destiny: String,
-costs: {type: String, enum: ["unpaid", "paid", "contributing"]}, 
-start: Date,
-estimatedTime: String,
-description: String,
-nationality: String,
-ageCrew: Number,
-journey: {type: String, enum: ["tourism", "cruising", "regatta", "charter"]},
-experience: {type: String, enum: ["required", "no required"]},
-seaMiles: {type: String, enum: ["no required", "more than 100 miles", "more than 1000 miles", "more than 10000 miles"]},
-offerImage: {type: Schema.Types.ObjectId, ref: 'boat'},
-}
 
 
 
@@ -177,14 +135,11 @@ Links
 
 Trello
 
-· https://trello.com/b/ZiguSPQz/7seas 
+
 
 Git
 
-· Client: https://github.com/MarcSadurni/7SeasClient
+· Client: 
 
-· Server: https://github.com/MarcSadurni/7SeasServer
+· Server: 
 
-Slides
-
-· https://github.com/MarcSadurni/7SeasServer 
