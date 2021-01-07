@@ -90,32 +90,21 @@ Models
 MODEL USER 
 
 {
-username: String,
-password: String,
-age: String,
-gender: {type: String, enum: ["Male", "Female"]}, 
-disponibility: Date,
-email: String,
-languages: String,
-country: String,
-city: String,
-experience: {type: String, enum: ["low", "medium", "high"]}, 
-lookingForSail: Boolean,
-image: String
+    username: String,
+    password: String,
+    age: String,
+    gender: { type: String, enum: ["Male", "Female"] },
+    email: String,
+    image: String,
 }
 
-MODEL BOAT :
+MODEL GAME:
 
 {
-boatName: String,
-year: String,
-typeBoat: {type: String, enum: ["power", "sail"]}, 
-country: String,
-currentLocation: String,
-crewNumber: Number,
-rooms: Number,
+name: String,
+players: Number, 
+type: { type: String, enum: ["Board", "VideoGame"] },
 owner: {type: Schema.Types.ObjectId, ref: 'User'},
-lenght: Number
 image: String
 }
 
